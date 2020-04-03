@@ -11,7 +11,7 @@ public class RevString {
 	//RevString d=new RevString();
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	String str1,str2;
+	String str1,str2="";
 	Scanner scn=new Scanner(System.in);
 	str1=scn.next();
 	//System.out.println("String is\t:"+str1);
@@ -22,8 +22,11 @@ ss.reverse();
 System.out.println(ss);
 	
 	for (int i=str1.length()-1;i>=0;i--) {
-		System.out.print(str1.charAt(i));
+//		System.out.print(str1.charAt(i));
+		str2=str2+str1.charAt(i);
+		
 	}
-	
+	System.out.println(str2);
+	scn.close();
 }
 }
